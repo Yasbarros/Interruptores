@@ -38,15 +38,4 @@ Este repositório contém um projeto para controle de interrupções utilizando 
 - **Dependências**:
   - Biblioteca para controle de LEDs **WS2812**.
 
-## Como Contribuir
 
-1. Faça um fork deste repositório.
-2. Crie uma branch para suas modificações (`git checkout -b feature/nova-funcionalidade`).
-3. Faça as modificações desejadas.
-4. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`).
-5. Envie para o repositório remoto (`git push origin feature/nova-funcionalidade`).
-6. Abra um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
