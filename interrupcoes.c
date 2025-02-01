@@ -1,8 +1,8 @@
-#include <stdio.h>            // Inclusão da biblioteca padrão de entrada/saída, necessária para funções como printf() para exibição de mensagens no terminal.
-#include "pico/stdlib.h"      // Inclusão da biblioteca padrão da Raspberry Pi Pico, que oferece funções de controle como GPIO, temporizadores, e outros recursos.
-#include "hardware/gpio.h"    // Biblioteca para manipulação de pinos GPIO no Raspberry Pi Pico, permitindo configurações e controle de entradas e saídas digitais.
-#include "hardware/timer.h"   // Biblioteca para controle e utilização de temporizadores (timers) do Raspberry Pi Pico, úteis para delays e outras funções temporizadas.
-#include "hardware/pio.h"     // Biblioteca para trabalhar com o PIO (Programmable Input/Output), uma funcionalidade avançada do Raspberry Pi Pico que permite implementar protocolos personalizados de comunicação e controle de hardware.
+#include <stdio.h>            // Inclusão da biblioteca padrão de entrada/saída, necessária para funções como printf()
+#include "pico/stdlib.h"      // Inclusão da biblioteca padrão da Raspberry Pi Pico
+#include "hardware/gpio.h"    // Biblioteca para manipulação de pinos GPIO no Raspberry Pi Pico
+#include "hardware/timer.h"   // Biblioteca para controle e utilização de temporizadores (timers) do Raspberry Pi Pico
+#include "hardware/pio.h"     // Biblioteca para trabalhar com o PIO (Programmable Input/Output)
 #include "ws2812.h"           // Biblioteca PIO para controle dos WS2812
 
 // Definição dos pinos
@@ -186,7 +186,7 @@ void setup() {
 
     // Inicializa o temporizador para piscar o LED RGB | 5 vezes por segundos
     static struct repeating_timer timer;
-    add_repeating_timer_ms(100, blink_led_callback, NULL, &timer);
+    add_repeating_timer_ms(200, blink_led_callback, NULL, &timer);
 }
 
 int main() {
