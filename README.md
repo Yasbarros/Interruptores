@@ -38,4 +38,4 @@ Este repositório contém um projeto para controle de interrupções utilizando 
 - **Dependências**:
   - Biblioteca para controle de LEDs **WS2812**.
 
-
+Link do video: https://youtu.be/QRaLFWj3CvQ
